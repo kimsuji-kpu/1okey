@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>1OKEY</title>
+
+	<style type="text/css">
+		:root {
+			--excel-color: #387A47;
+			--ppt-color: #C45A3B;
+			--word-color: #1E438F;
+			--han-color: #4A9CD9;
+		}
+
+		*{margin:0; padding:0; }
+		/*폰트 설정*/
+		@font-face { font-family: 'GmarketSansBold';  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff'); font-weight: normal; font-style: normal;}
+		@font-face { font-family: 'GmarketSansMedium'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');  font-weight: normal; font-style: normal; }
+		@font-face { font-family: 'GmarketSansLight'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff'); font-weight: normal;  font-style: normal; }
+		/*헤더*/
+		body{ width: auto; height: 100vh;}
+
+		header{ float: left; width: 327px; height: 100vh; background: var(--word-color); position: fixed; z-index: 100; }
+
+		.logo_w img{width: 120px; position:relative; margin-left: 100px; padding-top: 70px;}
+		
+
+		.line{ position:relative; height: 320px; margin-bottom: 30px; }
+
+		.nav{display: flex; position:relative; justify-content: space-between; align-items: center; flex-direction: column;  }
+		.nav li{ display: flex; flex-direction: column; align-items: center; list-style:none; margin-top: 10px;}
+		.nav a{display: flex; text-decoration: none; font-size:50px; justify-content: space-between; align-items: center;  flex-direction: column; }
+		.nav .click{font-family: 'GmarketSansBold'; font-size: 30px; font-weight: bold; color: #fff; line-height: 60px;}
+		.nav .un_click{font-family: 'GmarketSansLight'; font-size: 24px; color: #fff; line-height: 60px;}
+
+		/* 하부 카테고리 및 페이지 이름*/
+		.main{ position: absolute; width: 2000px; margin-left: 380px;  }
+		.top .menu{ width:1400px;display: flex; justify-content: flex-start; align-items: center;  }
+		.menu .icon{width: 60px;  margin-top: 50px; padding-right: 30px; float: left; }
+		.menu img{width: 60px;  }
+		
+		.title{display: flex; flex-wrap: wrap; margin-left: 900px; align-items: center;  }
+		#icon_logo{ margin-top: 50px; width: 40px; height: 40px; margin-right: 10px; }
+		.title h2{ font-family: 'GmarketSansBold'; font-size: 26px; font-weight: bold; color: var(--word-color); line-height: 60px; text-align: center; margin-top:50px;  }
+
+		/* 내용*/
+		.container{display: flex; flex-direction: row; position: absolute;  }
+		.content{ display: flex; align-items: center; flex-direction: column; margin-right: 60px;} 
+		.hov-anim-box img{width: 380px; box-sizing: border-box; box-shadow: 0px 6px 8px #F0F0F0; border-radius: 10px; margin-top: 50px; margin-left: -15px;}
+		.hov-anim-box .animated{display: none; }
+		.hov-anim-box:hover .animated{display: inline; transform: scale(1.1);}
+		.hov-anim-box:hover .static{display: none; transform: scale(1.1);}
+
+		.text{display: flex; align-items: center; width: 400px;}
+		#icon_key{width: 30px; padding-top: 30px; padding-right: 10px;}
+		.keyName{font-family: 'GmarketSansBold'; font-size: 18px; color: #323232; line-height: 50px;}
+		.content h4{font-family: 'GmarketSansBold'; font-size: 20px; color: #323232; line-height: 40px;}
+		.content h5{font-family: 'GmarketSansMedium'; font-size: 16px; color: #4F4F4F; line-height: 40px;}
+	</style>
+</head>
+<body>
+	<header>
+		<a href="index.html" class="logo_w"><img src="https://i.postimg.cc/52fwhY9w/Kakao-Talk-20201025-174827056-05.png"></a>
+
+		<ul class="nav">
+			<hr class="line">
+			<li><a href="word1.html" class="click">W</a></li>
+			<li><a href="excel1.html" class="un_click">E</a></li>
+			<li><a href="ppt1.html" class="un_click">P</a></li>
+			<li><a href="han1.html"class="un_click">H</a></li>
+		</ul>
+	</header>
+
+	<div class="main">
+		<div class="top">
+			<div class="menu">
+				<a href="word1.html" class="icon"><img src="./img/icon_word_1.png" ></a>
+				<a href="word2.html" class="icon"><img src="./img/icon_word_2.png" ></a>
+				<a href="word3.html" class="icon"><img src="./img/icon_word_3.png" ></a>
+				<a href="word4.html" class="icon"><img src="./img/icon_word_blue4.png" ></a>
+				<div class="title">
+					<img src="./img/icon_word.png" id="icon_logo">
+					<h2>Word</h2>
+				</div>
+			</div>
+		</div>
+		<section class="container">
+
+			<div class="content">
+				<span class="hov-anim-box">
+				<img src="./img/word/divide.jpg" alt="" class="static">
+				<img src="./img/word/divide.gif" alt="" class="animated">
+				</span>
+				<div class="window">
+					<div class="text">
+						<h3 class="keyName"><img src="https://i.postimg.cc/L636hvLZ/key.png" id="icon_key">Window</h3>
+					</div>
+					<h4>Alt + Ctrl + S </h4>
+					<h5>문서 분할</h5>
+					<img src="https://i.postimg.cc/GhCmc68C/board.png">
+				</div>
+				<div class="mac">
+					<div class="text">
+						<h3 class="keyName"><img src="https://i.postimg.cc/L636hvLZ/key.png" id="icon_key">Mac</h3>
+					</div>
+					<h4>Alt + command + S</h4>
+					<h5>문서 분할</h5>
+					<img src="https://i.postimg.cc/GhCmc68C/board.png">
+				</div>
+			</div>
+
+			<div class="content">
+				<span class="hov-anim-box">
+				<img src="./img/word/memo.jpg" alt="" class="static">
+				<img src="./img/word/memo.gif" alt="" class="animated">
+				</span>
+				<div class="window">
+					<div class="text">
+						<h3 class="keyName"><img src="https://i.postimg.cc/L636hvLZ/key.png" id="icon_key">Window</h3>
+					</div>
+					<h4>Alt + Ctrl + M</h4>
+					<h5>메모 삽입</h5>
+					<img src="https://i.postimg.cc/GhCmc68C/board.png">
+				</div>
+				<div class="mac">
+					<div class="text">
+						<h3 class="keyName"><img src="https://i.postimg.cc/L636hvLZ/key.png" id="icon_key">Mac</h3>
+					</div>
+					<h4>Alt + command + M</h4>
+					<h5>메모 삽입</h5>
+					<img src="https://i.postimg.cc/GhCmc68C/board.png">
+				</div>
+			</div>
+			
+			<div class="content">
+				<span class="hov-anim-box">
+				<img src="./img/word/view.jpg" alt="" class="static">
+				<img src="./img/word/view.gif" alt="" class="animated">
+				</span>
+				<div class="window">
+					<div class="text">
+						<h3 class="keyName"><img src="https://i.postimg.cc/L636hvLZ/key.png" id="icon_key">Window</h3>
+					</div>
+					<h4>Alt + Ctrl + I</h4>
+					<h5>미리보기</h5>
+					<img src="https://i.postimg.cc/GhCmc68C/board.png">
+				</div>
+				<div class="mac">
+					<div class="text">
+						<h3 class="keyName"><img src="https://i.postimg.cc/L636hvLZ/key.png" id="icon_key">Mac</h3>
+					</div>
+					<h4>Alt + command + I</h4>
+					<h5>미리보기</h5>
+					<img src="https://i.postimg.cc/GhCmc68C/board.png">
+				</div>
+			</div>
+
+			<div class="content">
+				<span class="hov-anim-box">
+				<img src="./img/word/newfile.jpg" alt="" class="static">
+				<img src="./img/word/newfile.gif" alt="" class="animated">
+				</span>
+				<div class="window">
+					<div class="text">
+						<h3 class="keyName"><img src="https://i.postimg.cc/L636hvLZ/key.png" id="icon_key">Window</h3>
+					</div>
+					<h4>Ctrl + N</h4>
+					<h5>새 문서 작성</h5>
+					<img src="https://i.postimg.cc/GhCmc68C/board.png">
+				</div>
+				<div class="mac">
+					<div class="text">
+						<h3 class="keyName"><img src="https://i.postimg.cc/L636hvLZ/key.png" id="icon_key">Mac</h3>
+					</div>
+					<h4>command + N</h4>
+					<h5>새 문서 작성</h5>
+					<img src="https://i.postimg.cc/GhCmc68C/board.png">
+				</div>
+			</div>
+
+			<div class="content">
+				<span class="hov-anim-box">
+				<img src="./img/word/save.jpg" alt="" class="static">
+				<img src="./img/word/save.gif" alt="" class="animated">
+				</span>
+				<div class="window">
+					<div class="text">
+						<h3 class="keyName"><img src="https://i.postimg.cc/L636hvLZ/key.png" id="icon_key">Window</h3>
+					</div>
+					<h4>Ctrl + S</h4>
+					<h5>문서 저장</h5>
+					<img src="https://i.postimg.cc/GhCmc68C/board.png">
+				</div>
+				<div class="mac">
+					<div class="text">
+						<h3 class="keyName"><img src="https://i.postimg.cc/L636hvLZ/key.png" id="icon_key">Mac</h3>
+					</div>
+					<h4>command + S</h4>
+					<h5>문서 저장</h5>
+					<img src="https://i.postimg.cc/GhCmc68C/board.png">
+				</div>
+			</div>
+
+			<div class="content">
+				<span class="hov-anim-box">
+				<img src="./img/word/close.jpg" alt="" class="static">
+				<img src="./img/word/close.gif" alt="" class="animated">
+				</span>
+				<div class="window">
+					<div class="text">
+						<h3 class="keyName"><img src="https://i.postimg.cc/L636hvLZ/key.png" id="icon_key">Window</h3>
+					</div>
+					<h4>Ctrl + W</h4>
+					<h5>문서 닫기</h5>
+					<img src="https://i.postimg.cc/GhCmc68C/board.png">
+				</div>
+				<div class="mac">
+					<div class="text">
+						<h3 class="keyName"><img src="https://i.postimg.cc/L636hvLZ/key.png" id="icon_key">Mac</h3>
+					</div>
+					<h4>command + W</h4>
+					<h5>문서 닫기</h5>
+					<img src="https://i.postimg.cc/GhCmc68C/board.png">
+				</div>
+			</div>
+
+			<div class="content">
+				<span class="hov-anim-box">
+				<img src="./img/word/cancel.jpg" alt="" class="static">
+				<img src="./img/word/cancel.gif" alt="" class="animated">
+				</span>
+				<div class="window">
+					<div class="text">
+						<h3 class="keyName"><img src="https://i.postimg.cc/L636hvLZ/key.png" id="icon_key">Window</h3>
+					</div>
+					<h4>Ctrl + Z</h4>
+					<h5>작업 실행 취소</h5>
+					<img src="https://i.postimg.cc/GhCmc68C/board.png">
+				</div>
+				<div class="mac">
+					<div class="text">
+						<h3 class="keyName"><img src="https://i.postimg.cc/L636hvLZ/key.png" id="icon_key">Mac</h3>
+					</div>
+					<h4>command + Z</h4>
+					<h5>작업 실행 취소</h5>
+					<img src="https://i.postimg.cc/GhCmc68C/board.png">
+				</div>
+			</div>
+			
+		</section>
+	</div>
+	
+</body>
+</html>

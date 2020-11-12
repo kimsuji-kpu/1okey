@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>1OKEY</title>
+
+	<style type="text/css">
+
+		*{margin:0; padding:0; }
+		/*폰트 설정*/
+		@font-face { font-family: 'GmarketSansBold';  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff'); font-weight: normal; font-style: normal;}
+		@font-face { font-family: 'GmarketSansMedium'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');  font-weight: normal; font-style: normal; }
+		@font-face { font-family: 'GmarketSansLight'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff'); font-weight: normal;  font-style: normal; }
+		/*헤더*/
+		body{ position: fixed;}}
+		header{width: 100vw;}
+
+		:root {--word-color:#1E438F;  
+		 --excel-color:#387A47; 
+		 --ppt-color:#C45A3B;  
+		 --han-color:#4A9CD9;}
+
+		/*로고*/
+		.logo_b{width: 127px; position: absolute; margin-left: 200px; margin-top: 50px;}
+		
+
+		 .main_img{width: 800px;  height:1700px;position: absolute; background-color: var(--word-color); transform:translate(1100px,-350px); z-index: -5; animation: changecolor 4s infinite; float: right; }
+		 @keyframes changecolor{
+		 	0%{background-color: #5BA4E8;}
+		 	25%{background-color: #407CCD;}
+		 	50%{background-color:#2A5BB7;}
+		 	75%{background-color: #1C408C;}
+		 }
+		 .main_img img{width: 800px;  position: absolute; transform: z-index: 5; float: right;}
+
+		 /*카테고리 네비게이션 */
+		.nav{display: flex; flex-direction: column; align-items: center; padding-top: 70px; width: 60px; margin-left:885px; }
+		.nav li{list-style: none;}
+		.nav a{text-decoration: none; color: var(--word-color);}
+		.nav .click{font-family: 'GmarketSansBold'; font-size: 36px; font-weight: bold; color: var(--word-color);line-height: 60px;}
+		.nav .click:hover{text-decoration: underline; text-underline-position: under; transition: all 0.5s ease-in;}
+		.nav .un_click:hover{font-size:30px;}
+		.nav .un_click{font-family: 'GmarketSansMedium'; font-size: 24px; font-weight: bold; color: #787878; line-height: 60px;}
+		
+		 hr.line{position: absolute; width: 131px; color: black; border: thin solid black; position: relative; left: 60%; transform: translate(400px,-215px);}
+
+		 /* 클릭 페이지 설명 */
+		 .click_pg{width: 600px; display: flex; justify-content: center; align-items: center; flex-direction: column; margin-top: 250px; margin-left: 120px;}
+
+		 .click_pg .name_pg { width: 600px; display: flex; align-items: center; color: var(--word-color); font-size: 40px; font-family: 'GmarketSansBold';margin-left: 170px; }
+		 .click_pg .name_pg h2{font-weight: bold; font-size: 48px; line-height: 296%; text-decoration: none;}
+		 .click_pg #move_pg{width: 100px; position: relative; margin-left: 180px; margin-top: -40px;}
+		 .click_pg .cont{width: 500px;font-family: 'GmarketSansMedium';font-style: normal;font-weight: 500; font-size: 20px; line-height: 194%; display: flex; align-items: center; color: #3C3C3C; margin-left: 70px; padding-top: 40px;}
+		 .li_icon .icon{width:100px; display: inline-block; padding-top: 50px;padding-right: 20px;}
+		 .li_icon .icon:first-child {margin-left: 200px; }
+		 .li_icon img{display: inline-block; text-align: center;}
+	</style>
+</head>
+<body>
+	<header>
+		<a href="word.html" class="logo_b"><img src="https://i.postimg.cc/tC33vtbq/Kakao-Talk-20201025-174827056-04.png"></a>
+		<ul class="nav">
+			
+			<li><a href="word.html" class="click" >W </a></li>
+			<li><a href="excel.html" class="un_click"  >E</li>
+			<li><a href="ppt.html" class="un_click"  >P </li>
+			<li><a href="han.html" class="un_click" >H </li>
+		</ul>
+		<hr class="line">
+	</header>
+	<div class="main_img">
+		<img src="./img/img_word.png">
+	</div>
+	<div class="click_pg">
+		<h2 class="name_pg">Word:워드</h2>
+		<a href="word1.html" id="move_pg"><img src="https://i.postimg.cc/sxw31rk7/icon-move.png"></a>
+		<h3 class="cont">15개 이상의 글자, 단락정렬, 유용한 단축키를<br>빠르고 쉽게 배울 수 있습니다.</h3>
+	</div>
+	<div class="li_icon">
+		<a href="word2.html" class="icon"><img src="./img/icon_word_blue2.png"></a>
+		<a href="word3.html" class="icon"><img src="./img/icon_word_blue3.png"></a>
+		<a href="word4.html" class="icon"><img src="./img/icon_word_blue4.png"></a>
+	</div>
+
+	
+</body>
+</html>
